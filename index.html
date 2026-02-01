@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="logo">Keepa.</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#demos">Demos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">☰</div>
+    </div>
+  </nav>
+
+  <section id="home" class="hero-section">
+    <div class="hero-3d-bg">
+      <!-- Math Symbols -->
+      <div class="floating-item math-symbol" style="--i:1;">∑</div>
+      <div class="floating-item math-symbol" style="--i:2;">π</div>
+      <div class="floating-item math-symbol" style="--i:3;">∫</div>
+      <div class="floating-item math-symbol" style="--i:4;">∞</div>
+      <div class="floating-item math-symbol" style="--i:5;">∂</div>
+
+      <!-- CS Elements -->
+      <div class="floating-item binary-code" style="--i:6;">10110</div>
+      <div class="floating-item binary-code" style="--i:7;">01001</div>
+      <div class="floating-item binary-code" style="--i:8;">&lt;/&gt;</div>
+      <div class="floating-item binary-code" style="--i:9;">{ }</div>
+
+      <!-- Keep one wireframe cube for geometry -->
+      <div class="cube cube-1 wireframe">
+        <div class="face front"></div>
+        <div class="face back"></div>
+        <div class="face right"></div>
+        <div class="face left"></div>
+        <div class="face top"></div>
+        <div class="face bottom"></div>
+      </div>
+    </div>
+    <div class="hero-content">
+      <div class="profile-pic">
+        <img src="https://i.postimg.cc/85ryjxBG/keepa.jpg" alt="Keepa Maharjan" />
+      </div>
+      <h1>Keepa Maharjan</h1>
+      <p class="subtitle">Leveraging Math and CS</p>
+      <a href="#about" class="cta-button">Learn More</a>
+    </div>
+  </section>
+
+  <section id="about" class="content-section">
+    <div class="section-container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <p>
+          Hi, I’m Keepa, a Computer Science and Mathematics major at Caldwell
+          University with a strong interest in problem solving, logical
+          reasoning, and analytical thinking. I am passionate about learning
+          and enjoy exploring how theory and practice connect, especially in
+          technical and quantitative fields. As an international student, I
+          have developed resilience, adaptability, and a strong work ethic. I
+          am actively involved in academic and service-oriented activities,
+          which have strengthened my communication skills and teamwork. I
+          value stepping out of my comfort zone, embracing challenges, and
+          continuously growing both academically and personally while working
+          toward meaningful goals.
+        </p>
+        <div style="margin-top: 30px; text-align: center;">
+          <a href="resume.pdf" download class="main-btn">Download Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="content-section alt-bg">
+    <div class="section-container">
+      <h2 class="section-title">Projects & Skills</h2>
+      <div class="projects-grid">
+        <div class="project-card tilt-card">
+          <h3>Projects</h3>
+          <p>
+            I have worked on programming-based projects using HTML, CSS, and
+            JavaScript to build responsive and interactive web applications,
+            which strengthened my technical skills and understanding of
+            front-end development.
+          </p>
+        </div>
+        <div class="project-card tilt-card">
+          <h3>Technical Skills</h3>
+          <p>
+            I am skilled in problem solving, logical reasoning, and programming,
+            with a strong foundation in computer science and mathematics.
+          </p>
+        </div>
+        <div class="project-card tilt-card">
+          <h3>Soft Skills</h3>
+          <p>
+            I bring strong communication, teamwork, adaptability, and a
+            disciplined work ethic, allowing me to contribute effectively in
+            both academic and collaborative environments.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="demos" class="content-section">
+    <div class="section-container">
+      <h2 class="section-title">Widgets</h2>
+
+      <div class="carousel-wrapper">
+        <button class="carousel-btn prev-btn" id="prevBtn" aria-label="Previous Slide">❮</button>
+        <div class="carousel-container">
+          <div class="carousel-track" id="carouselTrack">
+
+            <div class="demo-section carousel-slide">
+              <h4>Video Introduction</h4>
+
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/QsaaeRYzRrs?si=KhoYbMNxnVwXtiB5" title="Video Introduction"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                  allowfullscreen>
+                </iframe>
+              </div>
+
+              <p class="demo-description">
+                A video introduction or project showcase.
+              </p>
+            </div>
+
+            <!-- Weather App Demo -->
+            <div class="demo-section carousel-slide">
+              <h4>Weather</h4>
+              <div class="weather-widget">
+                <div class="weather-input-container">
+                  <input type="text" id="cityInput" placeholder="Enter city name" />
+                  <button onclick="getWeather()" class="weather-btn">
+                    Get Weather
+                  </button>
+                  <button onclick="getWeatherByLocation()" class="weather-btn location-btn"
+                    title="Get weather for your current location">
+                    📍 Use My Location
+                  </button>
+                </div>
+                <div id="weather-info">
+                  <p>Enter a city name or use your location to see the weather</p>
+                </div>
+              </div>
+              <p class="demo-description">
+                Interactive weather application with real-time data fetching
+                capabilities
+              </p>
+            </div>
+
+
+
+
+            <!-- Music Player Demo -->
+            <div class="demo-section carousel-slide">
+              <h4>Music Player</h4>
+              <div class="music-player">
+                <div class="music-info">
+                  <h4 id="song-title">Sample Song</h4>
+                  <p id="song-artist">Demo Artist</p>
+                </div>
+                <audio id="audio-player" controls>
+                  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+                  Your browser does not support the audio element.
+                </audio>
+                <div class="music-controls">
+                  <button onclick="playPause()" id="playPauseBtn" class="music-btn play">
+                    Play
+                  </button>
+                  <button onclick="stopMusic()" class="music-btn stop">
+                    Stop
+                  </button>
+                </div>
+                <div class="volume-control">
+                  <label>Volume:</label>
+                  <input type="range" id="volumeControl" min="0" max="100" value="50"
+                    onchange="setVolume(this.value)" />
+                  <span id="volumeValue" class="volume-value">50%</span>
+                </div>
+              </div>
+              <p class="demo-description">
+                This is a demo of a music player project with play, pause, stop,
+                and volume controls
+              </p>
+            </div>
+
+            <!-- Location Demo -->
+            <div class="demo-section carousel-slide">
+              <h4>My Location</h4>
+
+              <div class="map-container">
+                <iframe id="mapFrame"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.184132239028!2d-74.00594138459418!3d40.71277597932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a258c4b5b5b%3A0x1e3b8b8b8b8b8b8b!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                  frameborder="0" allowfullscreen>
+                </iframe>
+              </div>
+              <div id="location-info" style="
+                    text-align: center;
+                    margin-top: 10px;
+                    color: rgba(255, 255, 255, 0.7);
+                    font-size: 14px;
+                  "></div>
+              <div style="margin-top: 30px; text-align: center">
+                <button onclick="showMyLocation()" class="weather-btn location-btn"
+                  style="margin: 0 auto; padding: 15px 30px; font-size: 18px;">
+                  📍 Show My Current Location
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <button class="carousel-btn next-btn" id="nextBtn" aria-label="Next Slide">❯</button>
+      </div>
+
+
+  </section>
+
+  <section id="contact" class="content-section alt-bg">
+    <div class="section-container">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-form-container">
+        <form action="https://formspree.io/f/mjvngvzd" method="POST">
+          <label for="name">Name</label>
+          <input type="text" name="name" placeholder="Your Name" required>
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" placeholder="Subject" required>
+          <label for="message">Message</label>
+          <textarea name="message" placeholder="Message..." rows="4" required></textarea>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Keepa Maharjan. All rights reserved.</p>
+  </footer>
+
+  <!-- Chatbot -->
+  <div class="chatbot-container" id="chatbotContainer">
+    <div class="chatbot-header">
+      <h3>Chat with me</h3>
+      <button class="chatbot-close" id="chatbotClose">&times;</button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="message bot-message">
+        <p>
+          Hello! I'm here to help. Ask me anything about Keepa or this
+          portfolio!
+        </p>
+      </div>
+    </div>
+    <div class="chatbot-input-container">
+      <input type="text" id="chatbotInput" placeholder="Type your message..." autocomplete="off" />
+      <button id="chatbotSend">Send</button>
+    </div>
+  </div>
+  <button class="chatbot-toggle" id="chatbotToggle">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+    </svg>
+  </button>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
